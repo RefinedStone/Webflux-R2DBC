@@ -1,7 +1,6 @@
 package com.example.reactiveapp.person;
 
 
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -9,6 +8,7 @@ import javax.persistence.*;
 
 @Entity
 @NoArgsConstructor
+@Table(name ="person")
 public class Person {
 
     @Id
