@@ -10,8 +10,10 @@ import reactor.core.publisher.Mono;
 public class PersonService {
     private final PersonRepository personRepository;
 
-    public Flux<Person> getAllPersons() {
-        return personRepository.findAll();
+    public Flux<PersonResponseDto> getAllPersons() {
+        return personRepository.findAll()
+                .map(person -> new PersonResponseDto(person.getName(), person.getAge()));
+
     }
 
     public Mono<Person> createPerson(PersonRequestDto requestDto) {

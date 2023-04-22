@@ -13,9 +13,10 @@ public class PersonController {
     private final PersonService personService;
 
     @GetMapping
-    public Flux<Person> getAllPersons() {
+    public Flux<PersonResponseDto> getAllPersons() {
         return personService.getAllPersons();
     }
+
     @PostMapping
     public Mono<Person> createPerson(@RequestBody PersonRequestDto requestDto) {
         return personService.createPerson(requestDto);
