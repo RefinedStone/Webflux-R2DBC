@@ -3,7 +3,7 @@
 Spring Webflux Stack with Hibernate Reactive를 학습하는 리포지토리
 
 Database : mariadb <br>
-ORM : Hibernate Reactive
+ORM : Hibernate Reactive with R2DBC
 
 ## Database Setting
 ### Install
