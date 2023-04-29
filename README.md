@@ -7,7 +7,7 @@ ORM : None
 
 ## Database Setting
 ### Install
-docker run -p 3306:3306 --name mariadb -e MYSQL_ROOT_PASSWORD= 1234 -d mariadb
+docker run -p 3306:3306 --name mariadb -e MYSQL_ROOT_PASSWORD= 1234 -d mariadb:10.11.2
 
 ### Create Database
 create database study;
